@@ -1,0 +1,36 @@
+{
+    "name": "cococollective/hellasimple_forum",
+    "type": "drupal-module",
+    "description": "Drupal module. Provides additional functionality to the Drupal core forum.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://github.com/cococollective/hellasimple_forum",
+    "authors": [{
+        "name": "Sierk Beij",
+        "email": "sierk@cococollective.org",
+        "role": "Lead developer for CocoCollective"
+    }],
+    "require": {
+        "cococollective/hellasimple_core": "8.0.*",
+        "drupal/better_formats": "8.1.*"
+    },
+    "require-dev": {
+        "drupal/core": "8.*@stable"
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packagist.drupal-composer.org"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "vendor/drupal/core": ["type:drupal-core"],
+            "vendor/drupal/modules/{$name}": ["type:drupal-module"],
+            "vendor/drupal/profiles/{$name}": ["type:drupal-profile"],
+            "vendor/drupal/themes/{$name}": ["type:drupal-theme"]
+        },
+        "branch-alias": {"dev-8.x-0.x": "8.0.x-dev"}
+    },
+    "non-feature-branches": ["archived-*", "abandoned-*"]
+}

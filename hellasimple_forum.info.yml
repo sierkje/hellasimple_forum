@@ -1,0 +1,14 @@
+name: HellaSimple Forum
+type: module
+description: Additional functionality for the Drupal core forum.
+core: 8.x
+package: HellaSimple
+features: true
+
+dependencies:
+  - better_formats
+  - forum
+  - hellasimple_core
+  - responsive_image
+  - views
+
